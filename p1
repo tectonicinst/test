@@ -1,0 +1,30 @@
+class A
+{
+ int a;
+ A()
+ {
+  a=10;
+  System.out.println("In A");
+ }
+} 
+class B extends A
+{
+ int a;
+ B()
+ {
+  a=20;
+  System.out.println("In B");
+ }
+ void add()
+ {
+  System.out.println(a+super.a);
+ }
+}
+class Const
+{
+ public static void main(String args[])
+ {
+  B obj=new B();
+  obj.add();
+ }
+}
